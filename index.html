@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tom Spears Music</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("sunset-bridge.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s2"><img src="images\tomSpearsLogo.png" height="100px"></div>
+    <div class="w3-col s2">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">By Appointment Only</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Tom<br>Spears<br>Music</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Califon, NJ</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">About Califon Music</span></h5>
+    <p>My mission is to empower students of all ages to embrace their unique artistic voices. I believe that music is a powerful expression of individuality, 
+        and our goal is to guide and support each student on their creative journey. Through innovative and modern teaching methods, I tailor my guitar lessons to meet the needs 
+        of beginners and experienced players alike. I am passionate about cultivating a nurturing and inspiring environment where students can develop their 
+        skills, explore new horizons, and confidently express themselves as musicians.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>“The beautiful thing about learning is that nobody can take it away from you.”</i></p>
+      <p>- B.B. King</p>
+    </div>
+    
+    <p><strong>Hours:</strong> By Appointment Only</p>
+    <p><strong>Address:</strong> 23 Academy St.</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WAYS TO LEARN</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'In-Person');" id="myLink">
+        <div class="w3-col s6 tablink">In Person</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Online');">
+        <div class="w3-col s6 tablink">Online</div>
+      </a>
+    </div>
+
+    <div id="In-Person" class="w3-container menu w3-padding-48 w3-card">
+      <h5>30min</h5>
+      <p class="w3-text-grey">$30</p><br>
+    
+      <h5>45min</h5>
+      <p class="w3-text-grey">$40</p><br>
+    
+      <h5>60min</h5>
+      <p class="w3-text-grey">$50</p><br>
+    </div>
+
+    <div id="Online" class="w3-container menu w3-padding-48 w3-card">
+        <h5>30min</h5>
+        <p class="w3-text-grey">$30</p><br>
+      
+        <h5>45min</h5>
+        <p class="w3-text-grey">$40</p><br>
+      
+        <h5>60min</h5>
+        <p class="w3-text-grey">$50</p><br>
+    </div>  
+    <img src="images\studioRoom.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px; text-align: center;">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-blackbg">WHERE TO FIND US</span></h5>
+    <p>Find us in the heart of Califon Boro.</p>
+    <p style="text-align: center;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9998346623265!2d-74.84312182352394!3d40.7180201372464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c38353703049b5%3A0x8e66a6d1d167c851!2sTom%20Spears%20Music!5e0!3m2!1sen!2sus!4v1692549302435!5m2!1sen!2sus" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+    <p><span class="w3-tag w3-blackbg">FYI!</span> Contact me today for available lesson times:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="Email Address" required name="Email Address"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Custom Website Solution by Tom Spears</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
