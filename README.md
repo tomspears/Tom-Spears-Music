@@ -1,4 +1,4 @@
-# CalifonMusic
+# Tom Spears Music
  informational website
 
 # TODO
